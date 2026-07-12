@@ -23,10 +23,8 @@ jobs:
     - name: 🛠️ 安装系统依赖和 Python 依赖
       run: |
         sudo apt-get update
-        sudo apt-get install -y xvfb x11-utils xdotool scrot fonts-noto-cjk
-        # 安装 Chrome 浏览器 (DrissionPage 需要依赖系统级浏览器)
+        sudo apt-get install -y xvfb x11-utils fonts-noto-cjk
         sudo apt-get install -y google-chrome-stable
-        # 安装 Python 库，替换掉 seleniumbase
         pip install DrissionPage requests
 
     - name: ⚙ 设置代理 (sing-box)
